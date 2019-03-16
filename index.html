@@ -10,8 +10,56 @@
     
 </head>
 <body>
+    <div>
+    <h1 id="card-title">Online Contacts <sup id="card-beta">BETA</sup></h1>
+    </div>
     
-    <h1>Big Fat GitHub Test</h1>
+    <div class="card-login-register">
 
+    <form action="Register.php" method="POST">
+        
+    <div>
+        <label for="registerName">First name* </label> 
+        <input type="text" required id="registerName" placeholder="First name...">
+    </div>
+    
+    <div>
+        <label for="registerLastName">Last name*</label>
+        <input type="text" required id="registerLastName" placeholder="Last name...">
+    </div>  
+    <div>   
+        <label for="registerPassword">Password*</label>
+        <input type="password" required id="registerPassword" placeholder="Password">
+    </div>
+    <div>    
+        <label for="registerEmail">Email*</label>
+        <input type="email" required id="registerEmail" placeholder="Email...">
+    </div>
+    <div>    
+            <label for="registerPhone">Phone number*</label>
+            <input type="tel" required id="registerPhone" placeholder="Phone number...">
+     </div>
+     <div>
+         <label for="registerTerms">I have read and accepted the Terms & Conditions</label>
+         <input type="checkbox" value="terms" required id="registerTerms">
+     </div>
+     <button type="submit">Register</button> 
+    </form>
+    
+    <form action="Login.php" method="POST">
+        <div>    
+        <label for="registeredEmail">Email*</label>
+        <input type="email" required id="registeredEmail" placeholder="Email...">
+    </div>
+
+    <div>    
+        <label for="registeredPassword">Password*</label>
+        <input type="password" required id="registeredPassword" placeholder="Password...">
+    </div>
+    <button type="submit">Login</button>
+    </form>
+
+
+    </div>
 </body>
 </html>
