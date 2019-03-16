@@ -11,11 +11,14 @@
 </head>
 <body>
     <div>
-    <h1 id="card-title">Online Contacts <sup id="card-beta">BETA</sup></h1>
+    <p id="card-title">Online Contacts <sup id="card-beta">BETA</sup></p>
     </div>
     
     <div class="card-login-register">
 
+    <div class="card-form">
+    
+        <div class="card-form-register">
     <form action="Register.php" method="POST">
         
     <div>
@@ -29,37 +32,54 @@
     </div>  
     <div>   
         <label for="registerPassword">Password*</label>
-        <input type="password" required id="registerPassword" placeholder="Password">
+        <input type="password" required id="registerPassword" placeholder="Password...">
     </div>
     <div>    
         <label for="registerEmail">Email*</label>
         <input type="email" required id="registerEmail" placeholder="Email...">
     </div>
     <div>    
-            <label for="registerPhone">Phone number*</label>
-            <input type="tel" required id="registerPhone" placeholder="Phone number...">
+            <label for="registerPhone">Phone*</label>
+            <input type="tel" required id="registerPhone" placeholder="Phone...">
      </div>
      <div>
-         <label for="registerTerms">I have read and accepted the Terms & Conditions</label>
+         <label for="registerTerms" id="card-reg-terms">I have read and accepted the Terms & Conditions</label>
          <input type="checkbox" value="terms" required id="registerTerms">
      </div>
      <button type="submit">Register</button> 
+     <p class="card-message"> Already Registered? <a href="#">Login</a></p>
     </form>
-    
+
+
+    </div>
+
+    <div class="card-form-login">
     <form action="Login.php" method="POST">
         <div>    
         <label for="registeredEmail">Email*</label>
         <input type="email" required id="registeredEmail" placeholder="Email...">
     </div>
-
     <div>    
         <label for="registeredPassword">Password*</label>
         <input type="password" required id="registeredPassword" placeholder="Password...">
     </div>
     <button type="submit">Login</button>
-    </form>
+    <p class="card-message">Not Registered? <a href="#">Register</a></p>    
+</form>
+</div>
+</div>
+</div>
 
 
-    </div>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script>
+    
+    $('.card-message a').click(function(e){
+        e.preventDefault();
+        $('.card-form-login,.card-form-register').toggle(500);
+    } );
+   
+    </script>
+
 </body>
 </html>
