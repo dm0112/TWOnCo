@@ -249,7 +249,7 @@ ul{
 
 .card-export{
     margin-top:3%;
-    margin-left: 35%;
+    margin-left: 3%;
 }
 
 #card-new-contact-btn{
@@ -271,6 +271,12 @@ ul{
 #card-new-contact-btn:hover,.card-export-btn:hover{
     background-color:rgba(35, 38, 48, 0.1);
     font-weight: bold;
+}
+@media (max-width:700px){
+  #card-new-contact-btn{
+      margin-top:1%;
+      margin-left:27%;
+  }
 }
 
 
