@@ -1,0 +1,97 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Contacts</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    
+        <div>
+                <p id="card-title">Online Contacts <sup id="card-beta">BETA</sup></p>
+                </div>
+        <div class="card-contacts-left-right">
+        
+                <div class="card-contacts-left">
+                
+                    <div class="card-search">
+                        <input type="search" placeholder="Search..">
+                    </div>
+                    <div class="card-contacts-list">
+                        <ul id="card-contacts-scroll">
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            <li>bip</li>
+                            <li> bop</li>
+                            </ul>
+        
+                    </div>
+                    <div class="card-contacts-left-buttons">
+                        <button onclick="myFunction()" class="card-export-btn">Export</button>
+                        <button type="button" id="card-new-contact-btn"">New Contact</button>
+                        <div class="card-export">
+                            <a href="#">CSV</a>
+                            <a href="#">vCard</a>
+                            <a href="#">Atom</a>
+                        </div>
+                    </div>
+        
+                </div>
+                
+                
+                <aside class="card-contacts-right">
+                    <form action="NewContact.php" method="POST">
+                        <div>
+                           <label for="addName">First Name</label>
+                           <input type="text" required id="addName" placeholder="First Name...">
+                        </div>
+                        <div>
+                            <label for="addLastName">Last Name</label>
+                            <input type="text" required id="addLastName" placeholder="Last Name...">
+                        </div>
+                        <div>
+                            <label for="addAddress">Address</label>
+                            <input type="text" required id="addAddress" placeholder="Address...">
+                         </div>
+                         <div>
+                            <label for="addDate">Date</label>
+                            <input type="datetime" required id="addDate" placeholder="Date...">
+                        </div>
+                        <div>
+                            <label for="addNumber">Phone Number</label>
+                            <input type="text" required id="addNumber" placeholder="Phone Number...">
+                        </div>
+                        <div>
+                            <label for="addEmail">Email</label>
+                            <input type="email" required id="addEmail" placeholder="Email...">
+                        </div>
+                        <div>
+                             <label for="addDescription">Description</label>
+                             <input type="text" required id="addDescription" placeholder="Description...">
+                        </div>
+                    </form>
+                  </aside>
+        
+        
+            </div>
+        
+</body>
+</html>
