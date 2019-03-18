@@ -119,11 +119,12 @@ body{
 
 .card-contacts-left-right{
     margin:auto;
+    margin-bottom: 5%;
     font-family: "Roboto", sans-serif;
     border-radius:20px;
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
-    height: 65%;
+    height: 97%;
 }
 .card-contacts-left{
     width:50%;
@@ -214,13 +215,13 @@ ul{
     border-radius: 15px;
     border: 0;
     margin-left:6%;
-    margin-top:1%;
+    margin-top:5%;
     color: black;
     padding:15px;
     font-size:14px;
     cursor: pointer;
     transition:all 1s;
-    display: inline-block;
+    display: relative;
     
 }
 .card-export-btn:hover .card-export a{
@@ -228,41 +229,48 @@ ul{
 }
 
 .card-export a {
-    border-radius: 15px;
-    margin-left:6%;
+    border-radius: 20px;
     text-decoration: none;
     color: black;
-    padding:2px;
+    padding:3px;
+    margin-left:7px;
+    margin-right: 5px;
     background-color:rgba(35, 38, 48, 0.3);
    font-family: "Roboto", sans-serif;
-   display: absolute;
+   display: relative;
    z-index:1;
-   
- 
-  
 }
+
 .card-export a:hover{
     background-color:rgba(35, 38, 48, 0.1);
     font-weight: bold;
     
 }
+
+.card-export{
+    margin-top:3%;
+    margin-left: 35%;
+}
+
 #card-new-contact-btn{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     background-color:rgba(35, 38, 48, 0.3);
     border-radius: 15px;
     border: 0;
-    margin-top:-65px;
-    margin-right: 65px;
+    margin-left:52%;
+    margin-top:3%;
     color: black;
     padding:15px;
     font-size:14px;
     cursor: pointer;
     transition:all 1s;
-    float: right;
-
+    display: relative;
+    
 }
 #card-new-contact-btn:hover,.card-export-btn:hover{
-    background: #FFFFFF;
+    background-color:rgba(35, 38, 48, 0.1);
     font-weight: bold;
 }
+
+
