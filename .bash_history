@@ -19,3 +19,13 @@ git config --global user.email mihaidaniel54@gmail.com
 git commit -m "Added layout and buttons"
 git push
 git status
+git status
+git add .
+git commit -m "Fixed few issues"
+git push
+git status
+git status
+git pull
+status
+git status
+git status

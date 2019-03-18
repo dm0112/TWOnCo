@@ -97,10 +97,10 @@ body{
 .card-form-register{
     display: none;
 }
-
+/* 
 .card-form-login{
     display: none;
-}
+} */
 
 
 @media screen and (max-width: 700px){
