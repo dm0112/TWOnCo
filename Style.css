@@ -142,11 +142,13 @@ body{
 @media (max-width:700px){
     .card-contacts-left{
        width: 100%;
-       display: block;
+       display: none;
        float:none;  
     }
     .card-contacts-right{
-        display: none;
+        width:100%;
+        float:none;
+        
     }
     .card-export a{
     color: #f2f2f2 !important;
@@ -158,12 +160,7 @@ body{
 ul{
     list-style: none;
 }
-.card-contacts-right{
 
-    float:left;
-   
-    background:0;
-}
 .card-search input{
     font-family: "Roboto", sans-serif;
     background: #f2f2f2;
@@ -281,4 +278,45 @@ ul{
   }
 }
 
-
+.card-contacts-right{
+    font-family: "Roboto", sans-serif;
+    background: rgba(223, 58, 58, 0.5);
+    float:right;
+   border-radius: 20px;
+    margin: auto;
+   
+    height: 100%;
+   
+  
+}
+.card-contacts-right input{
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+    width: 50%;
+    border: 20px;
+    text-align: center;
+    padding: 15px;
+    font-size:17px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 30px;
+    transition: all 1s;
+}
+.card-contacts-right label{
+    padding:50px;
+}
+.card-contacts-right button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background-color:rgba(35, 38, 48, 0.3);
+    border-radius: 15px;
+    border: 0;
+    margin-left:52%;
+    margin-top:3%;
+    color: black;
+    padding:15px;
+    font-size:14px;
+    cursor: pointer;
+    transition:all 1s;
+    display: relative;
+}

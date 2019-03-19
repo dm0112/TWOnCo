@@ -29,3 +29,12 @@ git pull
 status
 git status
 git status
+git pull
+git pull
+git status
+git add .
+git commit -m "display fixed"
+git push
+git config --global u--unset user.name
+git config --global --unset user.name
+git config --global --unset user.email

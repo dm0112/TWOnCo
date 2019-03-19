@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="card-contacts-left-buttons">
                         <button onclick="myFunction()" class="card-export-btn">Export</button>
-                        <button type="button" id="card-new-contact-btn"">New Contact</button>
+                        <button type="button" id="card-new-contact-btn">New Contact</button>
                         <div class="card-export">
                             <a href="#">CSV</a>
                             <a href="#">vCard</a>
@@ -69,24 +69,34 @@
                         </div>
                         <div>
                             <label for="addAddress">Address</label>
-                            <input type="text" required id="addAddress" placeholder="Address...">
+                            <input type="text" id="addAddress" placeholder="Address...">
                          </div>
                          <div>
-                            <label for="addDate">Date</label>
-                            <input type="datetime" required id="addDate" placeholder="Date...">
+                            <label for="addDate">Birthday</label>
+                            <input type="date" id="addDate">
                         </div>
                         <div>
-                            <label for="addNumber">Phone Number</label>
-                            <input type="text" required id="addNumber" placeholder="Phone Number...">
+                            <label for="addNumber">Phone</label>
+                            <input type="text" required id="addNumber" placeholder="Phone...">
                         </div>
                         <div>
                             <label for="addEmail">Email</label>
-                            <input type="email" required id="addEmail" placeholder="Email...">
+                            <input type="email" id="addEmail" placeholder="Email...">
                         </div>
                         <div>
                              <label for="addDescription">Description</label>
-                             <input type="text" required id="addDescription" placeholder="Description...">
+                             <input type="text" id="addDescription" placeholder="Description...">
                         </div>
+                        <div>
+                            <label for="addPic">Pictures</label>
+                            <input type="file" required id="addPic" accept="image/*">
+                        </div>
+                        <div>
+                            <label for="addWebAddress">Web address</label>
+                            <input type="url" id="addWebAddress" placeholder="link...">
+                        </div>
+                        <button type="submit">Add Contact</button>
+                        
                     </form>
                   </aside>
         
