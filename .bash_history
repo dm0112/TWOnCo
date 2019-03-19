@@ -38,3 +38,12 @@ git push
 git config --global u--unset user.name
 git config --global --unset user.name
 git config --global --unset user.email
+git status
+git add .
+git commit -m "Css for new contact"
+git push
+git commit -m "Css for new contact"
+git config user.email "mihaidaniel54@gmail.com"
+git commit -m "Css for new contact"
+git push
+exit
