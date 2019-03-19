@@ -57,7 +57,7 @@
         
                 </div>
                 
-            
+                <div class="contact-on">
                 <aside class="card-contacts-right">
                     <form action="NewContact.php" method="POST">
                         <div>
@@ -96,12 +96,23 @@
                             <label for="addWebAddress">Web address</label>
                             <input type="url" id="addWebAddress" placeholder="  link...">
                         </div>
-                        <button type="submit">Add Contact</button>
+                        <button type="submit">Save Contact</button>
                     </form>
                     
                   </aside>
-        
-        
-            </div>
-        
+                  </div>
+        </div>
+                  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+                  <script>
+                  
+                  $('#card-new-contact-btn').click(function(e){
+                      e.preventDefault();
+                      $('.contact-on').toggle(500);
+                  } );
+                </script>
+
+            <footer class="card-footer">
+                    Copyright &copy; 
+                 </footer>
 </body>
+</html>

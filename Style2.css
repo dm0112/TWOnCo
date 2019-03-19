@@ -44,6 +44,7 @@ body{
     background: rgba(255, 255, 255, 0.6);
     width: 97%;
     height: 97%;
+  
 }
 .card-contacts-left{
     width:50%;
@@ -59,12 +60,16 @@ body{
 @media (max-width:700px){
     .card-contacts-left{
        width: 100%;
-       display: none;
+       display: inline-block;
        float:none;  
     }
     .card-contacts-right{
-        width:100%;
         float:none;
+        background:white;
+		padding:5%;
+		border-radius:15px;
+		  background: rgba(255, 255, 255, 0.6);
+		  margin-top:15px;
         
     }
     .card-export a{
@@ -200,7 +205,9 @@ ul{
       justify-content: space-between;
   }
 }
-
+.contact-on{
+    display: none;
+}
 .card-contacts-right  {
     display:flex;
     flex-direction: column;
@@ -241,6 +248,25 @@ input[type="file"]{
     margin-left: 40%;
     margin-top:3%;
     font-size: 20px;
+}
+
+.card-footer{
+    background:url(background.jpg);
+    text-align: center;
+    color:black;
+    padding:15px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin: 0 25% 0 25%;
+    border-radius:10px;
+    transition: all 1s;
+    
+
+    
+}
+@media (min-width:700px){
+.card-footer:hover{
+    color:grey;
 }
 
 

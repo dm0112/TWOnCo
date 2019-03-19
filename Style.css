@@ -97,10 +97,7 @@ body{
 .card-form-register{
     display: none;
 }
-/* 
-.card-form-login{
-    display: none;
-} */
+
 
 
 @media screen and (max-width: 700px){
@@ -117,6 +114,21 @@ body{
         
     }
     }
-
+    .card-footer{
+        background:url(background.jpg);
+        text-align: center;
+        color:black;
+        padding:15px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        margin: 0 25% 0 25%;
+        border-radius:10px;
+        transition: all 1s;
+        position:relative;
+    }
+    @media (min-width:700px){
+    .card-footer:hover{
+        color:grey;
+    }
 
  
