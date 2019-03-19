@@ -10,10 +10,11 @@
     
 </head>
 <body>
-    
+    <header>
         <div>
                 <p id="card-title">Online Contacts <sup id="card-beta">BETA</sup></p>
                 </div>
+            </header>
         <div class="card-contacts-left-right">
         
                 <div class="card-contacts-left">
@@ -108,7 +109,7 @@
                   
                   $('#card-new-contact-btn').click(function(e){
                       e.preventDefault();
-                      $('.contact-on').toggle(500);
+                      $('.contact-on, .card-footer2').toggle(500);
                   } );
                 </script>
 
