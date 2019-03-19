@@ -97,10 +97,10 @@ body{
 .card-form-register{
     display: none;
 }
-
+/* 
 .card-form-login{
     display: none;
-}
+} */
 
 
 @media screen and (max-width: 700px){
@@ -108,8 +108,7 @@ body{
     .card-form button,
     .card-form input,
     .card-message, 
-    #card-reg-terms,
-    .card-search input:hover {
+    #card-reg-terms {
         -webkit-transform:scale(1.5);
         -moz-transform:scale(1.5);
         -ms-transform:scale(1.5);
@@ -119,166 +118,5 @@ body{
     }
     }
 
-.card-contacts-left-right{
-    margin:auto;
-    margin-bottom: 5%;
-    font-family: "Roboto", sans-serif;
-    border-radius:20px;
-    background: rgba(255, 255, 255, 0.6);
-    width: 97%;
-    height: 97%;
-}
-.card-contacts-left{
-    width:50%;
-    margin:auto;
-    float:left;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    
-    
-}
 
-@media (max-width:700px){
-    .card-contacts-left{
-       width: 100%;
-       display: block;
-       float:none;  
-    }
-    .card-contacts-right{
-        display: none;
-    }
-    .card-export a{
-    color: #f2f2f2 !important;
-    background-color:red !important;
-       
-    }
-    
-}
-ul{
-    list-style: none;
-}
-.card-contacts-right{
-
-    float:left;
-   
-    background:0;
-}
-.card-search input{
-    font-family: "Roboto", sans-serif;
-    background: #f2f2f2;
-    width: 87%;
-    border: 10px;
-    text-align: center;
-    padding: 15px;
-    font-size:17px;
-    border-radius: 10px;
-    margin-left: 6%;
-    margin-top: 30px;
-    transition: all 1s;
-}
-.card-search input:hover{
-    font-weight: bold;
-    transform: scale(1.1);
-}
-.card-contacts-list{
-
-    background-color:#f2f2f2;
-    overflow:auto;
-    
-    box-sizing: border-box;
-    width: 87%;
-    height: 60%;
-    margin-right:7%;
-    margin-top:14px;
-    margin-left:5.9%;
-    padding: 5px;
-    border-radius: 15px;
-}
-.card-contacts-list ul{
-    padding-left: 0px;
-    
-}
-.card-contacts-list ul li{
-    color:black;
-    background-color: #f2f2f2;
-    padding: 15px;
-    border-bottom: 1px solid grey;
-}
-::-webkit-scrollbar{
-   visibility: hidden;
-}
-
-.card-export-btn{
-    
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    background-color:rgba(35, 38, 48, 0.3);
-    border-radius: 15px;
-    border: 0;
-    margin-left:6%;
-    margin-top:5%;
-    color: black;
-    padding:15px;
-    font-size:14px;
-    cursor: pointer;
-    transition:all 1s;
-    display: relative;
-    
-}
-.card-export-btn:hover .card-export a{
-    display: block;
-}
-
-.card-export a {
-    border-radius: 20px;
-    text-decoration: none;
-    color: black;
-    padding:3px;
-    margin-left:7px;
-    margin-right: 5px;
-    background-color:rgba(35, 38, 48, 0.3);
-   font-family: "Roboto", sans-serif;
-   display: relative;
-   z-index:1;
-}
-
-.card-export a:hover{
-    background-color:rgba(35, 38, 48, 0.1);
-    font-weight: bold;
-    
-}
-
-.card-export{
-    margin-top:3%;
-    margin-left: 3%;
-}
-
-#card-new-contact-btn{
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    background-color:rgba(35, 38, 48, 0.3);
-    border-radius: 15px;
-    border: 0;
-    margin-left:52%;
-    margin-top:3%;
-    color: black;
-    padding:15px;
-    font-size:14px;
-    cursor: pointer;
-    transition:all 1s;
-    display: relative;
-    
-}
-#card-new-contact-btn:hover,.card-export-btn:hover{
-    background-color:rgba(35, 38, 48, 0.1);
-    font-weight: bold;
-}
-@media (max-width:700px){
-  #card-new-contact-btn{
-      margin-top:1%;
-      margin-left:27%;
-  }
-}
-
-
+ 
