@@ -114,7 +114,7 @@ body{
         
     }
     }
-    .card-footer{
+    .card-footer1{
         background:url(background.jpg);
         text-align: center;
         color:black;
@@ -127,8 +127,9 @@ body{
         position:relative;
     }
     @media (min-width:700px){
-    .card-footer:hover{
+    .card-footer1:hover{
         color:grey;
     }
 
  
+    }
