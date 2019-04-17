@@ -3,7 +3,8 @@ Tabele:
   2) Contact
 
 Contact:
-   ID_Contact - nu va fi la vedere
+   ID_Contact -> nu va fi la vedere
+   ID_User -> pentru a sti ca acest contact apartine unui user
    First_Name
    Last_Name
    Address
