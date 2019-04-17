@@ -47,7 +47,7 @@ Model - View - Controller
                            contactul respectiv
              6) grupare -> persoanele cu hobby-uri , skill-uri , sunt din acelasi oras , etc . vor fi grupati , iar id-urile lor vor fi 
                            intr-un tabel din baza de date ce va stoca id-urile contactelor , momentan va fi un numar maxim impus de 
-                           lucruri comune
+                           lucruri comune dar si un numar maxim de persoane intr-un grup.
       
      D. Un model gestionare utilizator / export :
                 
