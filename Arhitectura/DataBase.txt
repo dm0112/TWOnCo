@@ -17,7 +17,7 @@ Contact:
 
 
 User:
-   ID_User - nu va fi la vedere
+   ID_User -> nu va fi la vedere
    Firt_Name
    Last_Name
    Email
