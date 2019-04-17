@@ -1,0 +1,27 @@
+Tabele:
+  1) User
+  2) Contact
+
+Contact:
+   ID_Contact - nu va fi la vedere
+   First_Name
+   Last_Name
+   Address
+   Birthday
+   Phone
+   Email
+   Description - acest camp va avea o dimensiune mai mare fata de restul , aici va o fi o mica descriere despre contact (hobby-uri , skills , etc.)
+   Web_Address - acest camp poate avea valoare NULL
+   Chosen_Photos - vor fi memorate pozele alese dintr-un filechooser
+
+
+User:
+   ID_User - nu va fi la vedere
+   Firt_Name
+   Last_Name
+   Email
+   Password
+   Phone
+
+
+Intre tabela User si Contact va exista o relatie de 1 to Many. Un utilizator poate sa aibe mai multe randuri persoane din tabela Contact 

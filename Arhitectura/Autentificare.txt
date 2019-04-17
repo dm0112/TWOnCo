@@ -1,0 +1,32 @@
+ Ca un utilizator sa ramana conectat pentru o perioada de timp fara sa mai introducem din nou datele de logare am folosit
+JWT (JSON Web Tokens) ce este format din 3 componente:
+
+  1) Header -> contine informatii despre semnatura JWT-ului sub forma:
+
+ ex: {
+    "typ": "JWT",
+    "alg": "HS256"
+    }
+
+  Unde la "typ" se specifica ce tip de obiect este, 
+  iar "alg" reprezinta algoritmul de "hashing" utilizat pentru creearea semnaturii
+
+  2) Payload -> contine date stocate in interiorul JWT-ului, in cazul nostru datele legate de id-ul utilizatorului
+
+
+  3) Signature -> contine encodarea informatiei din header si cea din payload, iar din acestea 2 rezulta un string ce va fi
+                  "hashed" cu o cheie secreta utilizand algoritmul din header
+
+ex cod:  // signature algorithm
+         data = base64urlEncode( header ) + “.” + base64urlEncode( payload )
+         hashedData = hash( data, secret )
+         signature = base64urlEncode( hashedData )
+
+ex: // header
+     eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+    // payload
+    eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ
+    // signature
+-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
+
+ Token-ul va fi compus din cele 3 componente unite de simbolul '.' 
