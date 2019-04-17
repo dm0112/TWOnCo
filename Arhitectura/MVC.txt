@@ -45,12 +45,17 @@ Model - View - Controller
              5) contact -> un buton ce avea o functie php unde este memorat id-ul contactului ,iar la apasare
                            va genera in partea dreapta a ecranului informatiile despre
                            contactul respectiv
+             6) grupare -> persoanele cu hobby-uri , skill-uri , sunt din acelasi oras , etc . vor fi grupati , iar id-urile lor vor fi 
+                           intr-un tabel din baza de date ce va stoca id-urile contactelor , momentan va fi un numar maxim impus de 
+                           lucruri comune
       
      D. Un model gestionare utilizator / export :
                 
                1) account_settings -> se va deschide un popup ce permite modificarea datelor de utilizator
                                       in cazul unei greseli 
                2) export -> va exporta lista de contacte in functie de formatul dorit
+               
+            
 
 
 
