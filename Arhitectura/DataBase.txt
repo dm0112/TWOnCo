@@ -28,7 +28,10 @@ User:
 Grup:
    ID_user -> se va sti al cui utilizator apartine acest grup
    Nume_Grup
-   Contact_1
+   Comun_1
+   Comun_2
+   Comun_3       // Nu este obligatoriu ca toate campurile sa fie completate , trb sa existe macar un lucru comun , si macar 2 contacte 
+   Contact_1                   cu acel interes comun
    Contact_2
    Contact_3
    Contact_4
