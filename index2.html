@@ -24,7 +24,7 @@
                     </div>
                     <div class="card-contacts-list">
                         <ul id="card-contacts-scroll">
-                            <li>bip</li>
+                            <li >bip</li>
                             <li> bop</li>
                             <li>bip</li>
                             <li> bop</li>
@@ -46,7 +46,8 @@
         
                     </div>
                     <div class="card-contacts-left-buttons">
-                        <button type="button" id="card-new-contact-btn">New Contact</button>
+                        <button type="button" id="card-new-contact-btn"  onclick="showNewContact()">New Contact</button>
+                        <button type="button" id="card-advanced-sort">Advanced Sort</button>
                         <div class="card-export">
                             <h3>Export</h3>
                             <a href="#">CSV</a>
@@ -58,7 +59,7 @@
         
                 </div>
                 
-                <div class="contact-on">
+                <div class="contact-on" id="contact-on">
                 <aside class="card-contacts-right">
                     <form action="NewContact.php" method="POST">
                         <div>
@@ -104,13 +105,24 @@
 
                   </div>
         </div>
-                  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+                  <!-- <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script> -->
                   <script>
                   
-                  $('#card-new-contact-btn').click(function(e){
-                      e.preventDefault();
-                      $('.contact-on, .card-footer2').toggle(500);
-                  } );
+                //   $('#card-new-contact-btn').click(function(e){
+                //       e.preventDefault();
+                //       $('.contact-on, .card-footer2').toggle(500);
+                //   } );
+
+                    function showNewContact() {
+                            
+                            var y = document.getElementById("contact-on");
+                            if (y.style.display == "none" || y.style.display == "") {
+                                y.style.display = "block";
+                            }
+                            else {
+                                y.style.display="none";
+                            }
+                                }
                 </script>
 
             <footer class="card-footer2">

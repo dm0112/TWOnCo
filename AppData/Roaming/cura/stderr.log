@@ -1,0 +1,253 @@
+2019-05-14 23:01:54,960 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin ConsoleLogger
+2019-05-14 23:01:54,980 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin CuraDrive
+2019-05-14 23:01:55,012 - INFO - [MainThread] CuraEngineBackend.CuraEngineBackend.__init__ [81]: Found CuraEngine at: C:\Program Files\Ultimaker Cura 4.0\CuraEngine.exe
+2019-05-14 23:01:55,015 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin CuraEngineBackend
+2019-05-14 23:01:55,028 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin CuraProfileReader
+2019-05-14 23:01:55,042 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin CuraProfileWriter
+2019-05-14 23:01:55,056 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin OBJReader
+2019-05-14 23:01:55,078 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin OBJWriter
+2019-05-14 23:01:55,107 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin STLReader
+2019-05-14 23:01:55,122 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin STLWriter
+2019-05-14 23:01:55,135 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin FileLogger
+2019-05-14 23:01:55,154 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin FirmwareUpdateChecker
+2019-05-14 23:01:55,169 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin FirmwareUpdater
+2019-05-14 23:01:55,184 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin GCodeGzReader
+2019-05-14 23:01:55,198 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin GCodeGzWriter
+2019-05-14 23:01:55,213 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin GCodeProfileReader
+2019-05-14 23:01:55,241 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin GCodeReader
+2019-05-14 23:01:55,259 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin GCodeWriter
+2019-05-14 23:01:55,278 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin ImageReader
+2019-05-14 23:01:55,294 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin LegacyProfileReader
+2019-05-14 23:01:55,310 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin LocalContainerProvider
+2019-05-14 23:01:55,328 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin LocalFileOutputDevice
+2019-05-14 23:01:55,344 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin MachineSettingsAction
+2019-05-14 23:01:55,360 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin ModelChecker
+2019-05-14 23:01:55,376 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin MonitorStage
+2019-05-14 23:01:55,394 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin PerObjectSettingsTool
+2019-05-14 23:01:55,412 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin PostProcessingPlugin
+2019-05-14 23:01:55,429 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin PrepareStage
+2019-05-14 23:01:55,445 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin PreviewStage
+2019-05-14 23:01:55,468 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin RemovableDriveOutputDevice
+2019-05-14 23:01:55,498 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin SimulationView
+2019-05-14 23:01:55,518 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin SliceInfoPlugin
+2019-05-14 23:01:55,537 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin SolidView
+2019-05-14 23:01:55,565 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin SupportEraser
+2019-05-14 23:01:55,598 - DEBUG - [MainThread] cura.OAuth2.AuthorizationService.getAccessToken [106]: No auth data to retrieve the access_token from
+2019-05-14 23:01:55,601 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin Toolbox
+2019-05-14 23:01:55,625 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin CameraTool
+2019-05-14 23:01:55,645 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin MirrorTool
+2019-05-14 23:01:55,667 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin RotateTool
+2019-05-14 23:01:55,690 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin ScaleTool
+2019-05-14 23:01:55,707 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin SelectionTool
+2019-05-14 23:01:55,730 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin TranslateTool
+2019-05-14 23:01:55,760 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin UFPWriter
+2019-05-14 23:01:55,783 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin UltimakerMachineActions
+2019-05-14 23:01:56,045 - DEBUG - [MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onLoginStateChanged [57]: Log in state changed to False
+2019-05-14 23:01:56,046 - DEBUG - [MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onGetRemoteClustersFinished [80]: Parsed remote clusters to []
+2019-05-14 23:01:56,046 - DEBUG - [MainThread] UM3NetworkPrinting.src.Cloud.CloudOutputDeviceManager._onGetRemoteClustersFinished [81]: Removed: 0, added: 0, updates: 0
+2019-05-14 23:01:56,049 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin UM3NetworkPrinting
+2019-05-14 23:01:56,084 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin UpdateChecker
+2019-05-14 23:01:56,087 - INFO - [Thread-1] UpdateChecker.UpdateCheckerJob.run [36]: Checking for new version of cura
+2019-05-14 23:01:56,131 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin USBPrinting
+2019-05-14 23:01:56,152 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin UserAgreement
+2019-05-14 23:01:56,183 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade21to22
+2019-05-14 23:01:56,206 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade22to24
+2019-05-14 23:01:56,228 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade25to26
+2019-05-14 23:01:56,251 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade26to27
+2019-05-14 23:01:56,275 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade27to30
+2019-05-14 23:01:56,299 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade30to31
+2019-05-14 23:01:56,323 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade32to33
+2019-05-14 23:01:56,345 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade33to34
+2019-05-14 23:01:56,369 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade34to35
+2019-05-14 23:01:56,392 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin VersionUpgrade35to40
+2019-05-14 23:01:56,415 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin SimpleView
+2019-05-14 23:01:56,447 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin X3DReader
+2019-05-14 23:01:56,481 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin XmlMaterialProfile
+2019-05-14 23:01:56,507 - INFO - [MainThread] UM.PluginRegistry.loadPlugin [436]: Loaded plugin XRayView
+2019-05-14 23:01:56,527 - INFO - [MainThread] UM.VersionUpgradeManager.upgrade [143]: Looking for old configuration files to upgrade.
+2019-05-14 23:01:56,552 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,554 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,565 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,567 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,577 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,579 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,589 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,592 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,601 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,604 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,613 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,615 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,625 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,627 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,638 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\packages.json, skip it
+2019-05-14 23:01:56,640 - WARNING - [MainThread] UM.VersionUpgradeManager._getUpgradeTasks [295]: Failed to get file version: .\plugins.json, skip it
+2019-05-14 23:01:56,673 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [213]: Socket was unable to bind to port, increasing port number to 49675
+2019-05-14 23:01:56,675 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [227]: Previous socket existed. Closing that first.
+2019-05-14 23:01:56,677 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [295]: Attempting to kill the engine process
+2019-05-14 23:01:56,679 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [227]: Previous socket existed. Closing that first.
+2019-05-14 23:01:56,789 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [213]: Socket was unable to bind to port, increasing port number to 49676
+2019-05-14 23:01:56,791 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [227]: Previous socket existed. Closing that first.
+2019-05-14 23:01:56,793 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [295]: Attempting to kill the engine process
+2019-05-14 23:01:56,795 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [227]: Previous socket existed. Closing that first.
+2019-05-14 23:01:56,992 - DEBUG - [MainThread] UM.Backend.Backend._onSocketError [213]: Socket was unable to bind to port, increasing port number to 49677
+2019-05-14 23:01:56,994 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [227]: Previous socket existed. Closing that first.
+2019-05-14 23:01:56,996 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [295]: Attempting to kill the engine process
+2019-05-14 23:01:56,998 - DEBUG - [MainThread] UM.Backend.Backend._createSocket [227]: Previous socket existed. Closing that first.
+2019-05-14 23:01:57,005 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [187]: Socket state changed to Listening
+2019-05-14 23:01:57,015 - INFO - [MainThread] UM.Backend.Backend.startEngine [81]: Started engine process: C:\Program Files\Ultimaker Cura 4.0\CuraEngine.exe
+2019-05-14 23:01:57,017 - DEBUG - [MainThread] UM.Backend.Backend._backendLog [101]: [Backend] Calling engine with: ['C:\\Program Files\\Ultimaker Cura 4.0\\CuraEngine.exe', 'connect', '127.0.0.1:49677', '']
+2019-05-14 23:01:57,063 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-05-14 23:01:57,067 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] Cura_SteamEngine version 4.0.0
+2019-05-14 23:01:57,070 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] Copyright (C) 2018 Ultimaker
+2019-05-14 23:01:57,072 - DEBUG - [MainThread] UM.Backend.Backend._logSocketState [191]: Socket state changed to Connected
+2019-05-14 23:01:57,074 - DEBUG - [MainThread] UM.Backend.Backend._onSocketStateChanged [181]: Backend connected on port 49677
+2019-05-14 23:01:57,076 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-05-14 23:01:57,079 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] This program is free software: you can redistribute it and/or modify
+2019-05-14 23:01:57,081 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] it under the terms of the GNU Affero General Public License as published by
+2019-05-14 23:01:57,084 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] the Free Software Foundation, either version 3 of the License, or
+2019-05-14 23:01:57,086 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] (at your option) any later version.
+2019-05-14 23:01:57,088 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-05-14 23:01:57,091 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] This program is distributed in the hope that it will be useful,
+2019-05-14 23:01:57,093 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] but WITHOUT ANY WARRANTY; without even the implied warranty of
+2019-05-14 23:01:57,095 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+2019-05-14 23:01:57,097 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] GNU Affero General Public License for more details.
+2019-05-14 23:01:57,101 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] 
+2019-05-14 23:01:57,103 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] You should have received a copy of the GNU Affero General Public License
+2019-05-14 23:01:57,105 - DEBUG - [Thread-20] UM.Backend.Backend._backendLog [101]: [Backend] along with this program.  If not, see <http://www.gnu.org/licenses/>.
+2019-05-14 23:01:58,337 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.loadAllMetadata [338]: Loading metadata into container registry took 1.5371103286743164 seconds
+2019-05-14 23:01:58,399 - DEBUG - [MainThread] cura.Scene.CuraSceneController.setActiveBuildPlate [104]: Select build plate: 0
+2019-05-14 23:01:58,401 - INFO - [MainThread] cura.CuraApplication.run [695]: Initializing variant manager
+2019-05-14 23:01:58,405 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_glass
+2019-05-14 23:01:58,409 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [ultimaker_s5_glass] added.
+2019-05-14 23:01:58,409 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5
+2019-05-14 23:01:58,487 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [ultimaker_s5] added.
+2019-05-14 23:01:58,490 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container ultimaker_s5_aluminum
+2019-05-14 23:01:58,494 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [ultimaker_s5_aluminum] added.
+2019-05-14 23:01:58,498 - DEBUG - [MainThread] cura.Machines.VariantManager.initialize [59]: Exclude variant [empty_variant]
+2019-05-14 23:01:58,500 - INFO - [MainThread] cura.CuraApplication.run [699]: Initializing material manager
+2019-05-14 23:01:58,569 - INFO - [MainThread] cura.CuraApplication.run [704]: Initializing quality manager
+2019-05-14 23:01:58,582 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-05-14 23:01:58,585 - INFO - [MainThread] cura.CuraApplication.run [709]: Initializing machine manager
+2019-05-14 23:01:58,587 - INFO - [MainThread] cura.CuraApplication.run [712]: Initializing container manager
+2019-05-14 23:01:58,589 - INFO - [MainThread] cura.CuraApplication.run [715]: Initializing machine error checker
+2019-05-14 23:01:58,604 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Creality Ender-3
+2019-05-14 23:01:58,606 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Creality Ender-3_user
+2019-05-14 23:01:58,611 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [Creality Ender-3_user] added.
+2019-05-14 23:01:58,612 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container draft
+2019-05-14 23:01:58,615 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [draft] added.
+2019-05-14 23:01:58,617 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container Creality Ender-3_settings
+2019-05-14 23:01:58,620 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [Creality Ender-3_settings] added.
+2019-05-14 23:01:58,621 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container creality_ender3
+2019-05-14 23:01:58,664 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [creality_ender3] added.
+2019-05-14 23:01:58,669 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [Creality Ender-3] added.
+2019-05-14 23:01:58,674 - INFO - [MainThread] cura.MachineActionManager.addDefaultMachineActions [72]: Default machine actions added for machine definition [creality_ender3]
+2019-05-14 23:01:58,677 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container creality_ender3_extruder_0 #2
+2019-05-14 23:01:58,680 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container creality_ender3_extruder_0 #2_user
+2019-05-14 23:01:58,686 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [creality_ender3_extruder_0 #2_user] added.
+2019-05-14 23:01:58,688 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container fabtotum_tpu
+2019-05-14 23:01:58,691 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [fabtotum_tpu] added.
+2019-05-14 23:01:58,692 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container creality_ender3_extruder_0 #2_settings
+2019-05-14 23:01:58,696 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [creality_ender3_extruder_0 #2_settings] added.
+2019-05-14 23:01:58,697 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container creality_ender3_extruder_0
+2019-05-14 23:01:58,703 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [creality_ender3_extruder_0] added.
+2019-05-14 23:01:58,708 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [creality_ender3_extruder_0 #2] added.
+2019-05-14 23:01:58,713 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container fdmprinter
+2019-05-14 23:01:58,758 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [fdmprinter] added.
+2019-05-14 23:01:58,868 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: BQ_PauseAtHeight
+2019-05-14 23:01:58,871 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: ChangeAtZ
+2019-05-14 23:01:58,873 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: DisplayFilenameAndLayerOnLCD
+2019-05-14 23:01:58,875 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: FilamentChange
+2019-05-14 23:01:58,877 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeight
+2019-05-14 23:01:58,879 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeightRepRapFirmwareDuet
+2019-05-14 23:01:58,881 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: PauseAtHeightforRepetier
+2019-05-14 23:01:58,883 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: SearchAndReplace
+2019-05-14 23:01:58,887 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin.loadScripts [170]: Begin loading of script: Stretch
+2019-05-14 23:01:58,889 - DEBUG - [MainThread] UM3NetworkPrinting.src.UM3OutputDevicePlugin.checkCloudFlowIsPossible [412]: Checking if cloud connection is possible...
+2019-05-14 23:01:58,889 - DEBUG - [MainThread] UM3NetworkPrinting.src.UM3OutputDevicePlugin.checkCloudFlowIsPossible [435]: Cloud Flow not possible: User not logged in!
+2019-05-14 23:01:58,980 - INFO - [Thread-2] STLReader.STLReader.load_file [46]: Using NumPy-STL to load STL data.
+2019-05-14 23:01:59,003 - INFO - [MainThread] cura.Settings.GlobalStack.addExtruder [136]: Extruder[creality_ender3_extruder_0 #2] added to [Creality Ender-3] at position [0]
+2019-05-14 23:01:59,008 - WARNING - [MainThread] cura.Settings.ExtruderManager.registerExtruder [169]: Extruder [creality_ender3_extruder_0 #2] has already been registered on machine [Creality Ender-3], not doing anything
+2019-05-14 23:01:59,014 - WARNING - [MainThread] cura.Machines.MaterialManager.getFallbackMaterialIdByMaterialType [492]: The material type [TPU] does not have a fallback material
+2019-05-14 23:01:59,017 - INFO - [MainThread] cura.Settings.MachineManager._initMachineState [337]: Machine 'Creality Ender-3' quality set to 'draft'
+2019-05-14 23:01:59,196 - DEBUG - [Thread-2] UM.Mesh.MeshData.calculateNormalsFromVertices [444]: Calculating normals took 0.05596804618835449 seconds
+2019-05-14 23:01:59,197 - INFO - [MainThread] FirmwareUpdateChecker.FirmwareUpdateChecker.checkFirmwareVersion [76]: No machine with name Creality Ender-3 in list of firmware to check.
+2019-05-14 23:01:59,203 - DEBUG - [Thread-2] STLReader.STLReader._read [97]: Loaded a mesh with 8508 vertices
+2019-05-14 23:01:59,210 - DEBUG - [MainThread] UM.Mesh.MeshData.approximateConvexHull [401]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.004996776580810547 seconds. 8 input vertices. 8 output vertices.
+2019-05-14 23:02:00,399 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [280]: Creating post processing plugin view.
+2019-05-14 23:02:00,557 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [158]: Loading theme file: C:\Program Files\Ultimaker Cura 4.0\resources\themes\cura-light\theme.json
+2019-05-14 23:02:00,638 - DEBUG - [MainThread] UM.Qt.Bindings.Theme.load [230]: Loaded theme C:\Program Files\Ultimaker Cura 4.0\resources\themes\cura-light
+2019-05-14 23:02:00,702 - DEBUG - [MainThread] PostProcessingPlugin.PostProcessingPlugin._createView [290]: Post processing view created.
+2019-05-14 23:02:00,860 - WARNING - [MainThread] UM.Qt.Bindings.Theme.getImage [133]: No image header_pattern defined in Theme
+2019-05-14 23:02:00,872 - DEBUG - [MainThread] cura.Machines.Models.BuildPlateModel._update [33]: Updating BuildPlateModel.
+2019-05-14 23:02:01,417 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/resources/qml/IconWithText.qml:51:5: QML Label: Binding loop detected for property "text"
+2019-05-14 23:02:01,478 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-05-14 23:02:01,620 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action._createAdditionalComponentsView [196]: Creating additional ui components for UM3.
+2019-05-14 23:02:01,659 - DEBUG - [MainThread] UM3NetworkPrinting.src.DiscoverUM3Action.startDiscovery [47]: Starting device discovery.
+2019-05-14 23:02:01,664 - DEBUG - [MainThread] UM.Controller.setActiveStage [159]: Setting active stage to PrepareStage
+2019-05-14 23:02:01,788 - DEBUG - [MainThread] cura.Machines.Models.NozzleModel._update [34]: Updating NozzleModel.
+2019-05-14 23:02:01,888 - WARNING - [MainThread] UM.Qt.QtApplication.__onQmlWarning [352]: file:///C:/Program Files/Ultimaker Cura 4.0/plugins/PrepareStage/PrepareMain.qml:16:5: QML ActionPanelWidget: Binding loop detected for property "width"
+2019-05-14 23:02:01,890 - DEBUG - [MainThread] UM.Controller.setActiveView [92]: Setting active view to SolidView
+2019-05-14 23:02:01,893 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [103]: Creating model checker view.
+2019-05-14 23:02:01,902 - DEBUG - [MainThread] ModelChecker.ModelChecker._createView [112]: Model checker view created.
+2019-05-14 23:02:01,903 - DEBUG - [MainThread] SliceInfoPlugin.SliceInfo._createDialog [82]: Creating dialog [MoreInfoWindow.qml]
+2019-05-14 23:02:01,989 - DEBUG - [MainThread] cura.CuraApplication.run [747]: Booting Cura took 7.676605224609375 seconds
+2019-05-14 23:02:02,019 - DEBUG - [MainThread] cura.Machines.MachineErrorChecker._rescheduleCheck [136]: New error check scheduled.
+2019-05-14 23:02:02,021 - INFO - [MainThread] cura.Machines.MaterialManager._updateMaps [279]: Updating material lookup data ...
+2019-05-14 23:02:02,054 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1270]: Updating quality/quality_changes due to material change
+2019-05-14 23:02:02,056 - WARNING - [MainThread] cura.Machines.MaterialManager.getFallbackMaterialIdByMaterialType [492]: The material type [TPU] does not have a fallback material
+2019-05-14 23:02:02,058 - DEBUG - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1277]: Current quality type = [draft]
+2019-05-14 23:02:02,060 - INFO - [MainThread] cura.Settings.MachineManager._updateQualityWithMaterial [1291]: Current available quality type [draft] is available, applying changes.
+2019-05-14 23:02:02,097 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-05-14 23:02:02,211 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [61]: Updating QualityProfilesDropDownMenuModel.
+2019-05-14 23:02:02,213 - WARNING - [MainThread] cura.Machines.MaterialManager.getFallbackMaterialIdByMaterialType [492]: The material type [TPU] does not have a fallback material
+2019-05-14 23:02:02,216 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container coarse
+2019-05-14 23:02:02,220 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [coarse] added.
+2019-05-14 23:02:02,243 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container extra_coarse
+2019-05-14 23:02:02,247 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [extra_coarse] added.
+2019-05-14 23:02:02,270 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container fast
+2019-05-14 23:02:02,275 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [fast] added.
+2019-05-14 23:02:02,324 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container high
+2019-05-14 23:02:02,328 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [high] added.
+2019-05-14 23:02:02,352 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container normal
+2019-05-14 23:02:02,356 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [normal] added.
+2019-05-14 23:02:02,357 - DEBUG - [MainThread] LocalContainerProvider.LocalContainerProvider.loadContainer [59]: Loading container extra_fast
+2019-05-14 23:02:02,361 - DEBUG - [MainThread] UM.Settings.ContainerRegistry.addContainer [386]: Container [extra_fast] added.
+2019-05-14 23:02:02,392 - DEBUG - [MainThread] cura.Machines.Models.CustomQualityProfilesDropDownMenuModel._update [15]: Updating CustomQualityProfilesDropDownMenuModel.
+2019-05-14 23:02:02,394 - WARNING - [MainThread] cura.Machines.MaterialManager.getFallbackMaterialIdByMaterialType [492]: The material type [TPU] does not have a fallback material
+2019-05-14 23:02:03,200 - DEBUG - [MainThread] UM.Qt.QtRenderer._initialize [183]: Support for Vertex Array Objects: True
+2019-05-14 23:02:03,209 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [99]: Initialized OpenGL subsystems.
+2019-05-14 23:02:03,211 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [100]: OpenGL Version:  4.1.0 - Build 20.19.15.4549
+2019-05-14 23:02:03,213 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [101]: OpenGL Vendor:   Intel
+2019-05-14 23:02:03,215 - DEBUG - [MainThread] UM.View.GL.OpenGL.__init__ [102]: OpenGL Renderer: Intel(R) HD Graphics 4600
+2019-05-14 23:02:03,217 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\default.shader]...
+2019-05-14 23:02:03,224 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\selection.shader]...
+2019-05-14 23:02:03,229 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\default.shader]...
+2019-05-14 23:02:03,234 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\composite.shader]...
+2019-05-14 23:02:03,244 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\overhang.shader]...
+2019-05-14 23:02:03,253 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\striped.shader]...
+2019-05-14 23:02:03,260 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\transparent_object.shader]...
+2019-05-14 23:02:03,266 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\striped.shader]...
+2019-05-14 23:02:03,275 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\default.shader]...
+2019-05-14 23:02:03,280 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\grid.shader]...
+2019-05-14 23:02:03,286 - DEBUG - [MainThread] UM.View.GL.ShaderProgram.load [55]: Loading shader file [C:\Program Files\Ultimaker Cura 4.0\resources\shaders\platform.shader]...
+2019-05-14 23:02:03,401 - DEBUG - [MainThread] cura.Machines.QualityManager.initialize [136]: Lookup tables updated.
+2019-05-14 23:02:03,423 - INFO - [Thread-3] STLReader.STLReader.load_file [46]: Using NumPy-STL to load STL data.
+2019-05-14 23:02:03,432 - DEBUG - [Thread-3] UM.Mesh.MeshData.calculateNormalsFromVertices [444]: Calculating normals took 0.0009996891021728516 seconds
+2019-05-14 23:02:03,435 - DEBUG - [Thread-3] STLReader.STLReader._read [97]: Loaded a mesh with 51540 vertices
+2019-05-14 23:02:03,457 - DEBUG - [Thread-3] UM.Mesh.MeshData.approximateConvexHull [401]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.01900649070739746 seconds. 240 input vertices. 240 output vertices.
+2019-05-14 23:02:03,475 - DEBUG - [Thread-3] UM.FileHandler.ReadFileJob.run [69]: Loading file took 0.0 seconds
+2019-05-14 23:02:03,510 - DEBUG - [Thread-3] UM.Mesh.MeshData.approximateConvexHull [401]: approximateConvexHull(target_count=1024) Calculating 3D convex hull took 0.0319828987121582 seconds. 240 input vertices. 240 output vertices.
+2019-05-14 23:02:03,526 - DEBUG - [MainThread] cura.Machines.Models.QualityProfilesDropDownMenuModel._update [61]: Updating QualityProfilesDropDownMenuModel.
+2019-05-14 23:02:03,5292019-05-14 23:02:14,638 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [51]: No more on-app-exit callbacks to process. Tell the app to exit.
+2019-05-14 23:02:14,640 - INFO - [MainThread] cura.CuraApplication.closeApplication [547]: Close application
+2019-05-14 23:02:14,652 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [417]: Shutting down cura
+2019-05-14 23:02:14,701 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [295]: Attempting to kill the engine process
+2019-05-14 23:02:14,702 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [301]: Killing engine process
+2019-05-14 23:02:14,707 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [304]: Engine process is killed. Received return code 1
+seApplication [547]: Close applica2019-05-14 23:02:04,685 - INFO - [MainThread] cura.Machines.MachineErrorChecker._setResult [188]: Error check finished, result = False, time = 2.7s
+2019-05-14 23:02:11,236 - DEBUG - [MainThread] cura.TaskManagement.OnExitCallbackManager.triggerNextCallback [51]: No more on-app-exit callbacks to process. Tell the app to exit.
+2019-05-14 23:02:11,238 - INFO - [MainThread] cura.CuraApplication.closeApplication [547]: Close application
+2019-05-14 23:02:11,249 - DEBUG - [MainThread] UM.Qt.QtApplication.windowClosed [417]: Shutting down cura
+2019-05-14 23:02:11,295 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [295]: Attempting to kill the engine process
+2019-05-14 23:02:11,296 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [301]: Killing engine process
+2019-05-14 23:02:11,300 - DEBUG - [MainThread] CuraEngineBackend.CuraEngineBackend._terminate [304]: Engine process is killed. Received return code 1
