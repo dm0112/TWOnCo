@@ -66,14 +66,14 @@
                 <input type="password" required id="registeredPassword" placeholder="Password...">
             </div>
             <button type="submit">Login</button>
-            <p class="card-message">Not Registered? <a  onclick='hideLogin()'' href="#">Register</a></p>    
+            <p class="card-message">Not Registered? <a  onclick="hideLogin()" href="#">Register</a></p>    
         </form>
         </div>
         </div>
         </div>
         
         
-    <!-- <script src="path/to/vanilla.js"></script> -->
+    <!-- <script src="path/to/vanilla.js"> -->
      <!-- <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script> -->
     <script>
     
@@ -81,7 +81,7 @@
     //     e.preventDefault();
     //     $('.card-form-login,.card-form-register').toggle(500);
     // } );
-   function hideLogin(){
+   function hideLogin() {
        
     var x=document.getElementById("card-form-login"); // block
        var y=document.getElementById("card-form-register"); // none
@@ -93,12 +93,12 @@
    }
    function hideRegister(){
     var x=document.getElementById("card-form-login");
-       var y=document.getElementById("card-form-register");.
+       var y=document.getElementById("card-form-register");
        if(x.style.display == "none" || x.style.display == "" ){
            x.style.display = "block";
            y.style.display= "none";
        }
-       
+
 
    }
 
