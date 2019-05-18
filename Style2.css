@@ -173,6 +173,11 @@ ul{
     display:flex;
     flex-direction: column;
 }
+#AdvancedSort{
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    display: none;
+}
 .card-contacts-right form{
     margin-left:10%;
     margin-right:10%;

@@ -47,3 +47,14 @@ git config user.email "mihaidaniel54@gmail.com"
 git commit -m "Css for new contact"
 git push
 exit
+git status
+git add .
+git push
+git commit -m "jquery to javascript"
+git push
+git commit -m "jquery to javascript"
+git config --gloval user.email "mihaidaniel54@gmail.com"
+git config --global user.email "mihaidaniel54@gmail.com"
+git config --global user.name "lowly"
+git commit -m "jquery to javascript"
+git push

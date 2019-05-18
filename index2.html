@@ -47,7 +47,7 @@
                     </div>
                     <div class="card-contacts-left-buttons">
                         <button type="button" id="card-new-contact-btn"  onclick="showNewContact()">New Contact</button>
-                        <button type="button" id="card-advanced-sort">Advanced Sort</button>
+                        <button type="button" id="card-advanced-sort" onclick="showAdvancedSort()">Advanced Sort</button>
                         <div class="card-export">
                             <h3>Export</h3>
                             <a href="#">CSV</a>
@@ -61,10 +61,10 @@
                 
                 <div class="contact-on" id="contact-on">
                 <aside class="card-contacts-right">
-                    <form action="NewContact.php" method="POST">
+                    <form action="NewContact.php" method="POST" id="card-contacts-right-show">
                         <div>
-                           <label for="addName">First Name</label>
-                           <input type="text" required id="addName" placeholder="  First Name...">
+                           <label for="addFirstName">First Name</label>
+                           <input type="text" required id="addFirstName" placeholder="  First Name...">
                         </div>
                         <div>
                             <label for="addLastName">Last Name</label>
@@ -98,11 +98,37 @@
                             <label for="addWebAddress">Web address</label>
                             <input type="url" id="addWebAddress" placeholder="  link...">
                         </div>
+                        <div>
+                            <label for="addUserGroup">User group</label>
+                            <input type="text" id="addUserGroup" placeholder="  User Group">
+                        </div>
                         <button type="submit">Save Contact</button>
                     </form>
-                    
+
                   </aside>
 
+                  </div>
+
+                  <div>
+                      
+                    <form action="AdvancedSort.php" method="POST" id="AdvancedSort" class="card-contacts-right">
+                        <div>
+                            <label for="sortFirstName">First Name</label>
+                            <input type="text"  id="sortName" placeholder="  First Name...">
+                        </div>
+                        <div>
+                            <label for="sortLastName">Last Name</label>
+                            <input type="text"  id="sortLastName" placeholder="  Last Name...">
+                        </div>
+                        <div>
+                            <label for="sortAge">Age</label>
+                            <input type="number" min="0" max="110" id="sortAgeMin">
+                            
+                            <input type="number" min="0" max="110" id="sortAgeMax">
+                            
+                        </div>
+                        <button type="submit">Search</button>
+                    </form>
                   </div>
         </div>
                   <!-- <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script> -->
@@ -116,13 +142,32 @@
                     function showNewContact() {
                             
                             var y = document.getElementById("contact-on");
+                            var x = document.getElementById("AdvancedSort");
                             if (y.style.display == "none" || y.style.display == "") {
                                 y.style.display = "block";
+                                x.style.display = "none";
+
                             }
                             else {
                                 y.style.display="none";
+                                // x.style.display = "block";
                             }
                                 }
+                    function showAdvancedSort(){
+                        var x = document.getElementById("AdvancedSort");
+                        var y = document.getElementById("contact-on");
+                        if(x.style.display == "none" || x.style.display == "")
+                        {
+                            y.style.display = "none";
+                            x.style.display = "flex";
+                            
+                        }
+                        else {
+                            // y.style.display = "block";
+                            x.style.display = "none";
+                        }
+                    }
+                    
                 </script>
 
             <footer class="card-footer2">
