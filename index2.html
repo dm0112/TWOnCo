@@ -21,8 +21,24 @@
                 <div class="card-contacts-left">
                 
                     <div class="card-search">
+                            <div class="dropdown" >
+                                    <button class="dropbtn">Sort
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <button type="submit"> Ascendent First Name</button>
+                                      <button type="submit"> Ascendent Last Name</button>
+                                      <button type="submit"> Descendent First Name</button>
+                                      <button type="submit"> Descendent Last Name</button>
+                                      <button type="submit"> Ascendent BirthDay</button>
+                                      <button type="submit"> Descendent BirthDay</button>
+                                    </div>
+                                  </div> 
                         <input type="search" placeholder="Search..">
+                        
                     </div>
+                  
+                
+                    
                     <div class="card-contacts-list">
                         <ul id="card-contacts-scroll">
                             <li >bip</li>
@@ -123,6 +139,13 @@
                             <input type="number" min="0" max="110" id="sortAgeMax">
                             
                         </div>
+                        <div>
+                            <label for="grupName"> Group Name </label>
+                            <input type="text" id="grupName" placeholder=" Group Name..." >
+                        </div>
+                        <div>
+                            
+                        </div>
                         <button type="submit">Search</button>
                     </form>
                   </div>
@@ -211,6 +234,7 @@
                             z.style.display = "none";
                         }
                     }
+
                 </script>
 
             <footer class="card-footer2">
