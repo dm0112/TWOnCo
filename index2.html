@@ -15,6 +15,7 @@
                 <p id="card-title">Online Contacts <sup id="card-beta">BETA</sup></p>
                 </div>
             </header>
+            <button type=submit id=userEdit onclick="showUserEdit()">User</button>
         <div class="card-contacts-left-right">
         
                 <div class="card-contacts-left">
@@ -54,9 +55,7 @@
                             <a href="#">vCard</a>
                             <a href="#">Atom</a>
                         </div>
-                        
                     </div>
-        
                 </div>
                 
                 <div class="contact-on" id="contact-on">
@@ -104,13 +103,10 @@
                         </div>
                         <button type="submit">Save Contact</button>
                     </form>
-
                   </aside>
-
                   </div>
 
-                  <div>
-                      
+                  <div>    
                     <form action="AdvancedSort.php" method="POST" id="AdvancedSort" class="card-contacts-right">
                         <div>
                             <label for="sortFirstName">First Name</label>
@@ -130,6 +126,34 @@
                         <button type="submit">Search</button>
                     </form>
                   </div>
+
+                  <div>
+                    <form action="UserEdit.php" method="POST" id="UserEdit" class="card-contacts-right"> 
+                          <h2>User Edit</h2>
+                          <div>
+                                <label for="registerName">First name* </label> 
+                                <input type="text" required id="registerName" placeholder="First name...">
+                            </div>
+                            
+                            <div>
+                                <label for="registerLastName">Last name*</label>
+                                <input type="text" required id="registerLastName" placeholder="Last name...">
+                            </div>  
+                            <div>   
+                                <label for="registerPassword">Password*</label>
+                                <input type="password" required id="registerPassword" placeholder="Password...">
+                            </div>
+                            <div>    
+                                <label for="registerEmail">Email*</label>
+                                <input type="email" required id="registerEmail" placeholder="Email...">
+                            </div>
+                            <div>    
+                                    <label for="registerPhone">Phone*</label>
+                                    <input type="tel" required id="registerPhone" placeholder="Phone...">
+                             </div>
+                             <button type="submit">Save</button>
+                        </form>
+                 </div>
         </div>
                   <!-- <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script> -->
                   <script>
@@ -143,9 +167,11 @@
                             
                             var y = document.getElementById("contact-on");
                             var x = document.getElementById("AdvancedSort");
+                            var z = document.getElementById("UserEdit");
                             if (y.style.display == "none" || y.style.display == "") {
                                 y.style.display = "block";
                                 x.style.display = "none";
+                                z.style.display = "none";
 
                             }
                             else {
@@ -156,10 +182,13 @@
                     function showAdvancedSort(){
                         var x = document.getElementById("AdvancedSort");
                         var y = document.getElementById("contact-on");
+                        var z = document.getElementById("UserEdit");
                         if(x.style.display == "none" || x.style.display == "")
                         {
                             y.style.display = "none";
                             x.style.display = "flex";
+                            z.style.display = "none";
+
                             
                         }
                         else {
@@ -168,6 +197,20 @@
                         }
                     }
                     
+                    function showUserEdit(){
+                        var y = document.getElementById("contact-on");
+                        var x = document.getElementById("AdvancedSort");
+                        var z = document.getElementById("UserEdit");
+                        if(z.style.display == "none" || z.style.display == "")
+                        {
+                            y.style.display = "none";
+                            z.style.display = "flex";
+                            x.style.display = "none";
+                        }
+                        else{
+                            z.style.display = "none";
+                        }
+                    }
                 </script>
 
             <footer class="card-footer2">

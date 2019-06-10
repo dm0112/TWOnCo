@@ -72,6 +72,9 @@ body{
     transform: scale(1.2);
 
 }
+
+ 
+
 .card-form label{ 
     display: none;
     font-size:14px;
