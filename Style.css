@@ -1,0 +1,138 @@
+
+body{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(background.jpg);
+    height: 96vh;
+    
+    background-size: cover;
+    background-position: center;
+    
+}
+#card-title{
+ 
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size:25px;
+    text-align: end;
+    width: 75%;
+    transition:1s;
+    
+}
+#card-title:hover{
+    transform: scaleY(3);
+    transform:scaleX(1.2);
+    color:red;
+    
+}
+
+.card-login-register{
+    width: 360px;
+    margin:auto;
+}
+.card-form{
+    position: relative;
+    z-index: 1;
+    background-color:rgba(35, 38, 48, 0.1);
+    max-width:360px;
+    margin:0 auto 100px;
+    padding:45px;
+    text-align:center;
+}
+.card-form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:14px;
+    transition: all 1s;
+}
+.card-form input:hover {
+    font-weight: bold; 
+    transform: scale(1.2);
+}
+.card-form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: url(background.jpg);
+    width: 100%;
+    border: 0;
+    padding:15px;
+    color: #FFFFFF;
+    font-size:14px;
+    cursor: pointer;
+    transition:all 1s;
+}
+.card-form button:hover{
+    transform: scale(1.2);
+
+}
+
+ 
+
+.card-form label{ 
+    display: none;
+    font-size:14px;
+    color:#f2f2f2;
+    font-family: "Roboto",sans-serif;
+    
+}
+#card-reg-terms,.card-message{
+    display: block;
+    color:#f2f2f2;
+    padding:25px;
+    font-size:14px;
+    font-family: "Roboto",sans-serif;
+    transition: all 1s;
+}
+#card-reg-terms:hover,.card-message:hover{
+    transform: scale(1.2);
+}
+.card-message a{
+    text-decoration: none;
+    color:red;
+}
+.card-form-register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 700px){
+    #card-title,
+    .card-form button,
+    .card-form input,
+    .card-message, 
+    #card-reg-terms {
+        -webkit-transform:scale(1.5);
+        -moz-transform:scale(1.5);
+        -ms-transform:scale(1.5);
+        transform: none !important;
+        transition: none !important;
+        
+    }
+    }
+    .card-footer1{
+        background:url(background.jpg);
+        text-align: center;
+        color:black;
+        padding:15px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        margin: 0 25% 0 25%;
+        border-radius:10px;
+        transition: all 1s;
+        position:relative;
+    }
+    @media (min-width:700px){
+    .card-footer1:hover{
+        color:grey;
+    }
+
+ 
+    }
