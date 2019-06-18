@@ -19,9 +19,50 @@ $db= mysqli_connect("localhost", "root", "","onlinecontacts");
 }
 
 
+
 if(isset($_POST["vcardexport"]))
 {
+    $idContact=$_REQUEST['idContact'];
+    if($idContact !=null)
+    conctactChecked($idContact);
+}
 
+
+
+function conctactChecked($idContact)
+{
+    $query = "SELECT * from contacts where id='$idContact' ";
+    $result = mysqli_query($conn,$query);
+    $conIDContact        =  $result['IDContact'];  
+     $conNume       =  $result['Nume'];  
+     $conPrenume       =  $result['Prenume'];  
+     $conAddress       = $result['Address'];  
+     $conBirthday       = $result['Birthday'];  
+     $conPhone       =  $result['Phone'];
+     $conEmail        =  $result['Email'];  
+     $conDescription       =  $result['Description'];    
+     $conWebAddress      =  $result['WebAddress'];  
+     $conUserGroup      =  $result['UserGroup'];  
+     $conPic       =  $result['Pic'];  
+     $conid        =  $result['id'];  
+
+     include("vcard_library/vcardexp.inc.php");
+
+    $vcard = new vcardexp;
+    $vcard->setValue("IDContact",$conIDContact);
+    $vcard->setValue("Nume",$conNume);
+    $vcard->setValue("Prenume",$conPrenume);
+    $vcard->setValue("Address",$conAddress);
+    $vcard->setValue("Birthday",$conBirthday);
+    $vcard->setValue("Phone",$conPhone);
+    $vcard->setValue("Email",$conEmail);
+    $vcard->setValue("Description",$conDescription);
+    $vcard->setValue("WebAddress",$conWebAddress);
+    $vcard->setValue("UserGroup",$conUserGroup);
+    $vcard->setValue("Pic",$conPic);
+    $vcard->setValue("id",$conid);
+
+    $vcard->getCard();
 }
 
 
