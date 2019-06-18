@@ -67,12 +67,61 @@ for($j=0;$j<sizeof($tickets);$j++)
 $i++;
 }
 if(isset($_REQUEST["Description"]) && !empty($_REQUEST["Description"])){
-$tickets=$this->description($_REQUEST["Description"],$id);
+$tickets=$this->searchIn($_REQUEST["Description"],$id,"Description");
 for($j=0;$j<sizeof($tickets);$j++)
 	array_push($all,$tickets[$j]);
 
 $i++;
 }
+
+if(isset($_REQUEST["Address"]) && !empty($_REQUEST["Address"])){
+$tickets=$this->searchIn($_REQUEST["Address"],$id,"Address");
+for($j=0;$j<sizeof($tickets);$j++)
+	array_push($all,$tickets[$j]);
+
+$i++;
+}
+if((isset($_REQUEST["BirthdayMin"]) && !empty($_REQUEST["BirthdayMin"]) &&isset($_REQUEST["BirthdayMax"]) && !empty($_REQUEST["BirthdayMax"])) ||
+	isset($_REQUEST["BirthdayMin"]) && !empty($_REQUEST["BirthdayMin"]) ||
+	isset($_REQUEST["BirthdayMax"]) && !empty($_REQUEST["BirthdayMax"]))
+
+{
+$tickets=$this->selectBirthdaySort($id,$_REQUEST["BirthdayMin"],$_REQUEST["BirthdayMax"]);
+for($j=0;$j<sizeof($tickets);$j++)
+	array_push($all,$tickets[$j]);
+
+$i++;
+}
+
+if(isset($_REQUEST["Phone"]) && !empty($_REQUEST["Phone"])){
+$tickets=$this->searchIn($_REQUEST["Phone"],$id,"Phone");
+for($j=0;$j<sizeof($tickets);$j++)
+	array_push($all,$tickets[$j]);
+
+$i++;
+}
+if(isset($_REQUEST["Email"]) && !empty($_REQUEST["Email"])){
+$tickets=$this->selectColumn("Email",$_REQUEST["Email"],$id);
+for($j=0;$j<sizeof($tickets);$j++)
+	array_push($all,$tickets[$j]);
+
+$i++;
+}
+if(isset($_REQUEST["WebAddress"]) && !empty($_REQUEST["WebAddress"])){
+$tickets=$this->searchIn($_REQUEST["WebAddress"],$id,"WebAddress");
+for($j=0;$j<sizeof($tickets);$j++)
+	array_push($all,$tickets[$j]);
+
+$i++;
+}
+if(isset($_REQUEST["UserGroup"]) && !empty($_REQUEST["UserGroup"])){
+$tickets=$this->selectColumn("UserGroup",$_REQUEST["UserGroup"],$id);
+for($j=0;$j<sizeof($tickets);$j++)
+	array_push($all,$tickets[$j]);
+
+$i++;
+}
+
 
 $finalarray=[];
 for($a=0;$a<sizeof($all);$a++)
@@ -84,6 +133,22 @@ for($a=0;$a<sizeof($all);$a++)
 return $finalarray;
 
 
+}
+public function selectBirthdaySort($id,$birthdayMin,$birthdayMax){
+$contactsid=[];
+if(isset($_REQUEST["BirthdayMin"]) && !empty($_REQUEST["BirthdayMin"]) &&isset($_REQUEST["BirthdayMax"]) && !empty($_REQUEST["BirthdayMax"])){
+$sql = "select * from contacts where Birthday>='$birthdayMin' and Birthday<='$birthdayMax' and IDContact='$id'";}
+else if(isset($_REQUEST["BirthdayMin"]) && !empty($_REQUEST["BirthdayMin"]))
+{$sql = "select * from contacts where Birthday>='$birthdayMin' and IDContact='$id'";}
+else if(isset($_REQUEST["BirthdayMax"]) && !empty($_REQUEST["BirthdayMax"]))
+{$sql = "select * from contacts where Birthday<='$birthdayMax' and IDContact='$id'";}
+$result=mysqli_query($this->conn,$sql);
+	$resultCheck = mysqli_num_rows($result);
+	if($resultCheck>0)
+	while($row = mysqli_fetch_assoc($result)){
+			array_push($contactsid,$row["id"]);
+	}
+	return $contactsid;
 }
 
 public function selectColumn($column,$var,$id){
@@ -97,14 +162,14 @@ $result=mysqli_query($this->conn,$sql);
 	}
 	return $contactsid;
 }
-public function description($var,$id){
+public function searchIn($var,$id,$cat){ //substring in string
 $contactsid=[];
 $sql = "select * from contacts where IDContact='$id'";
 $result=mysqli_query($this->conn,$sql);
 	$resultCheck = mysqli_num_rows($result);
 	if($resultCheck>0)
 	while($row = mysqli_fetch_assoc($result)){
-			if(strpos($row["Description"],$var)!==false)
+			if(strpos($row["$cat"],$var)!==false)
 			array_push($contactsid,$row["id"]);
 	}
 	return $contactsid;
@@ -178,6 +243,7 @@ echo '"nume":"'.$row["Nume"].'",';
 echo '"Prenume":"'.$row["Prenume"].'",';
 echo '"Address":"'.$row["Address"].'",';
 echo '"Phone":"'.$row["Phone"].'",';
+echo '"Email":"'.$row["Email"].'",';
 echo '"Birthday":"'.$row["Birthday"].'",';
 echo '"Description":"'.$row["Description"].'",';
 echo '"WebAddress":"'.$row["WebAddress"].'",';
@@ -267,6 +333,35 @@ public function deleteContact($idcontact){
 	mysqli_stmt_bind_param($stmt,'i',$idcontact);
 	mysqli_stmt_execute($stmt);
 	return true;
+}
+
+
+public function verifyAVForm(){
+
+	if(isset($_REQUEST["sortFirstName"])
+&& empty($_REQUEST["sortFirstName"]) 
+&& isset($_REQUEST["sortLastName"])
+&& empty($_REQUEST["sortLastName"]) 
+&& isset($_REQUEST["Address"])
+&& empty($_REQUEST["Address"]) 
+&& isset($_REQUEST["BirthdayMin"])
+&& empty($_REQUEST["BirthdayMin"]) 
+&& isset($_REQUEST["BirthdayMax"])
+&& empty($_REQUEST["BirthdayMax"])
+&& isset($_REQUEST["Email"])
+&& empty($_REQUEST["Email"]) 
+&& isset($_REQUEST["Phone"])
+&& empty($_REQUEST["Phone"]) 
+&& isset($_REQUEST["Description"])
+&& empty($_REQUEST["Description"]) 
+&& isset($_REQUEST["WebAddress"])
+&& empty($_REQUEST["WebAddress"])
+&& isset($_REQUEST["UserGroup"])
+&& empty($_REQUEST["UserGroup"]) 
+)
+		return true;
+	return false;
+
 }
 
 }
