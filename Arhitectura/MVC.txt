@@ -1,0 +1,70 @@
+Model - View - Controller
+
+1. View-ul:
+    In index.html view-ul este dat de cele 2 formulare de logare, respectiv inregistrare
+    
+    In index2.html view-ul este dat de formularele pentru adugare contact, cautare avansata, editarea utilizorului
+
+
+2. Modelele sunt:
+   A. Un model de autentificare ce contine urmatoarele functii php:
+        1) login -> va face o interogare a bazei de date in legatura cu datele introduse 
+                    si va accesa pagina principala de datele sunt corecte
+                    iar in pagina principala in lista de contacte vor fi afisate 
+                    contactele corespunzatoare
+
+        2) register -> adauga in tabela dedicata pentru utilizatori persoana aferenta
+                       doar daca individul nu are cont deja creat
+
+   B. Un model ce va permite gestionarea datelor unui contact / modificarea / stergerea :
+
+         1) save_contact -> dupa completarea formularului de adaugare a unui contact 
+                            aceasta functie va adauga in bd datele introduse doar daca
+                            aceste date nu se afla deja in baza de date
+
+
+         2) save_changes -> o functie ce actualiza schimbarile aduse unui contact accesat
+                            deja prin functia "contact"
+
+         3) delete_contact -> va cauta in baza de date si va sterge la nivelul
+                              utilizatorului conectat contactul dorit
+ 
+    C. Un model afisare / filtrare a contactelor:
+
+             1) search -> se va deschide un mini meniu (ca un fel de popup) ce va permite o cautare
+                          mai complexa pe baza a mai multor criterii prin completarea unor texbox-uri
+                          sau a unor checkbox-uri si filtra lista de contacte in functie de 
+                          preferintele introduse
+
+             2) sortare_cresc -> va afisa in ordine crescatoare contactele
+             3) sortare_desc  -> va afisa in ordine descrescatoare contactele
+              
+             4) lista -> o lista de contacte permanenta vizibila , ce se va modifica constant
+                         in functie de celelalte functii , unde contactele vor fi reprezentate prin 
+                         butoane 
+             5) contact -> un buton ce avea o functie php unde este memorat id-ul contactului ,iar la apasare
+                           va genera in partea dreapta a ecranului informatiile despre
+                           contactul respectiv
+             6) grupare -> persoanele cu hobby-uri , skill-uri , sunt din acelasi oras , etc . vor fi grupati , iar id-urile lor vor fi 
+                           intr-un tabel din baza de date ce va stoca id-urile contactelor , momentan va fi un numar maxim impus de 
+                           lucruri comune dar si un numar maxim de persoane intr-un grup.
+      
+     D. Un model gestionare utilizator / export :
+                
+               1) account_settings -> se va deschide un popup ce permite modificarea datelor de utilizator
+                                      in cazul unei greseli 
+               2) export -> va exporta lista de contacte in functie de formatul dorit
+               
+            
+
+
+
+3. Controller :
+
+  1) Primul view,  cel legat de autentificare, foloseste modelul 'A' (login,register), dar si o functie din modelul 'D'(cea de account_settings)
+  
+  2) Al doilea view, foloseste toate celelalte modele inafara de modelul 'A'
+
+
+     
+    

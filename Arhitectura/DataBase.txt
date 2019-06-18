@@ -1,0 +1,40 @@
+Tabele:
+  1) User
+  2) Contact
+  3) Grup
+
+Contact:
+   ID_Contact -> nu va fi la vedere
+   ID_User -> pentru a sti ca acest contact apartine unui user
+   First_Name
+   Last_Name
+   Address
+   Birthday
+   Phone
+   Email
+   Description - acest camp va avea o dimensiune mai mare fata de restul , aici va o fi o mica descriere despre contact (hobby-uri , skills , etc.)
+   Web_Address - acest camp poate avea valoare NULL
+   Chosen_Photos - vor fi memorate pozele alese dintr-un filechooser
+
+
+User:
+   ID_User -> nu va fi la vedere
+   Firt_Name
+   Last_Name
+   Email
+   Password
+   Phone
+   
+Grup:
+   ID_user -> se va sti al cui utilizator apartine acest grup
+   Nume_Grup
+   Comun_1
+   Comun_2
+   Comun_3       // Nu este obligatoriu ca toate campurile sa fie completate , trb sa existe macar un lucru comun , si macar 2 contacte 
+   Contact_1                   cu acel interes comun
+   Contact_2
+   Contact_3
+   Contact_4
+
+Intre tabela user si grup exista o relatie de 1 to Many.
+Intre tabela User si Contact va exista o relatie de 1 to Many. Un utilizator poate sa aibe mai multe randuri persoane din tabela Contact 
