@@ -75,9 +75,12 @@ $iduser=$db->getIdFromToken($_COOKIE["token"]);
                               echo $db->displayContact($contacts[$i]);
                             }
                               if(sizeof($contacts)==0){
-                                echo "------------no data-----------";
+                                if($db->verifyAVForm()==true)
                                 $db->viewContacts($iduser,$cond);
+                            else  {echo "------------no data-----------";
+                                echo '<a style="text-decoration: none; color: red;" href=/index2.php> Go Back (click me)</a>';
 
+                                }
                               }
                            }
                             else
@@ -341,6 +344,7 @@ $iduser=$db->getIdFromToken($_COOKIE["token"]);
                             document.getElementById("addFirstName").value = "";
                  document.getElementById("addLastName").value = "";
                  document.getElementById("addAddress").value = "";
+                 document.getElementById("addEmail").value = "";
                  document.getElementById("addNumber").value = "";
                  document.getElementById("addDate").value = "";
                  document.getElementById("addDescription").value = "";
@@ -367,6 +371,7 @@ $iduser=$db->getIdFromToken($_COOKIE["token"]);
                  document.getElementById("addLastNamee").value = "";
                  document.getElementById("addAddresse").value = "";
                  document.getElementById("addNumbere").value = "";
+                    document.getElementById("addEmaile").value = "";
                  document.getElementById("addDatee").value = "";
                  document.getElementById("addDescriptione").value = "";
                  document.getElementById("addWebAddresse").value = "";
@@ -438,7 +443,7 @@ $iduser=$db->getIdFromToken($_COOKIE["token"]);
               function onClick(x){
             //let value=document.getElementById("val").value;
             
-              fetch("http://localhost:1983/endpoint.php?idcontact="+x) //da un promise 
+              fetch("http://localhost:4000/endpoint.php?idcontact="+x) //da un promise 
               .then((resp)=>{
                 return resp.json();
               })
@@ -451,6 +456,7 @@ $iduser=$db->getIdFromToken($_COOKIE["token"]);
                  document.getElementById("addLastNamee").value = jsonResp.Prenume;
                  document.getElementById("addAddresse").value = jsonResp.Address;
                  document.getElementById("addNumbere").value = jsonResp.Phone;
+                 document.getElementById("addEmaile").value = jsonResp.Email;
                  document.getElementById("addDatee").value = jsonResp.Birthday;
                  document.getElementById("addDescriptione").value = jsonResp.Description;
                  document.getElementById("addWebAddresse").value = jsonResp.WebAddress;
