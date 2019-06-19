@@ -119,7 +119,29 @@
               
               <h2>Organizarea Codului Sursa</h2>
               <span>
+                  Majoritatea functiilor php se regasesc in fisierul 'db.php', unde se realizeaza si conexiunea cu baza de date, acestea fiind apelate din fisierele php ale proiectului. 
+                  <br>
+                  Am folosit JavaScript vanilla pentru fiecare tranzitie, pentru bara de cautare rapida si pentru afisarea unor pop-up-uri privind interactiunea user-ului cu site-ul (email already used, invalid forms, exports). 
+                <br>
+                  Pentru afisarea asincrona a detaliilor unui contact am folosit Ajax, prin selectarea unui contact se apeleaza functia ce comunica cu endpoint-ul care va trimite datele aferente contactului pentru afisarea acestuia.
+                  <br>
+                  Cookie-ul este valabil 30 de zile din momentul crearii, acesta este bazat pe un token stocat in baza de date, care este alcatuit din criptarea md5 a email-ului concatenat cu parola si un cod "secret".
+                  <br>
+                  La modificarea ulterioara a parolei sau a adresei de email, cookie-ul de reinnoieste si token-ul va fi actualizat in baza de date.
+                  Cand utilizatorului se delogheaza, cookie-ul se distruge, token-ul se sterge din baza de date pentru a nu se loga altcineva cu acelasi cookie. 
+                  <br>
+                  <br>
+                  Baza de date este formata din trei tabele:
+                  <ul>
+                    <li>user , email unic, iduser unic  folosit drept cheie primara</li>
+                      <li>contacts , id-ul user-ului se asociaza cu fiecare contact al acestuia</li>
+                        <li>tokens , id-ul user-ului se asociaza cu token-ul acestuia
+                        </li>
+                      </ul>
 
+
+                  <br>
+                  Lista de contacte initiala este ordonata crescator dupa id-ul contactelor. Daca filtrarea nu are rezultate, va aparea un mesaj corespunzator insotit de un buton pentru revenire la lista initiala.
               </span>
 
 
