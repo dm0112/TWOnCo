@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html > 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Online Contacts Documentatie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="doc_style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Online Contacts Documentatie</h1>
+       </header>
+       <section id="Autori">
+            <h2>Autori</h2>
+                <li>
+                   <span>Ivan Alexandru-Ionut</span>
+               </li>
+               <li>
+                   <span>Mihai Daniel</span>
+        
+               </li>
+       </section>
+    
+       <section id="Introducere">
+           <h2>Introducere</h2>
+           <span>
+               Online Contacts reprezinta o pagina Web unde o persoana isi poate stoca
+               contactele dar si de a le gestiona. 
+           </span>
+           <br>
+           <span>
+               In acest raport se afla detalii legate de contructia paginii Web , de ustensilele
+               si algoritmii utilizati.
+           </span>
+       </section>
+        
+       <section id="Structura">
+           <h2> Structura Proiectului</h2>
+           <span>
+               Proiectul are la baza doua pagini HTML , una pentru Autentificare iar cealalta fiind Pagina Pricipala unde utilizatorul isi vede contactele , isi
+               introduce noi contacte , isi editeaza informatiile legate de cont.
+           </span>
+       </section>
+
+       <section id="Autentificare">
+            <h2> Autentificarea</h2>
+            <span>
+                Odata ce este accesat site-ul , utilizatorul este intampinat de un formular
+                de logare(in cazul in care are cont) , dar daca nu are cont se poate inregistra
+                accesand link-ul corespunzator. Trazitia dintre cele doua form-uri de logare , respectiv
+                de inregistrare se face cu ajutorul unei functii javascript ce atribuie proprietatii
+                "display" a form-ului de logare valoare NULL iar valoare TRUE celui de inregistrare.
+                Aceasta pagina de autentificare este stilizata cu ajutorul unui fisier "CSS".
+            </span>
+            <br>
+            <span>
+                In formularul de inregistrare utilizatorul va fi atentionat daca nu completeaza toate campurile necesare,
+                altfel atunci cand da submit , cu ajutorul fiserului "db.php" , pagina web se conecteaza la o baza
+                facand o interogare , aceea de a insera in tabela "user" un nou utilizator. Parola introduse de catre
+                utilizator va fi cripatata cu ajutorul ustensilei "md5" si memorata. Se creea un token pentru ca utilizatorul
+                sa fie nevoit sa se autentifice de fiecare data cand acceseaza site-ul , acest token fiind valabil 30 de zile. 
+                La deconectare token-ul si cookie-ul vor fi sterse , acestea creeandu-se din nou in momentul conectarii , lafel
+                si in cazul modificarii parolei sau email-ului de conectare.
+            </span>
+        </section>
+
+        <section id="Pagina_Pricipala">
+                <h2> Pagina Pricipala</h2>
+                <span>
+                    Utilizatorul este intampinat cu o interfata atractiva ,responsive  creata prin utilizarea ustensilelor CSS, acesta putand
+                    utiliza urmatoarele functionalitati:
+                </span>
+                    <li>
+                        <span>
+                            Deconectarea
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Editarea informatiilor legate de utilizator
+                        </span>
+                    </li>
+                    <li>
+                            <span>
+                                Vizualizarea Informatiilor legate de contact respectiv stergerea si modificarea lor prin apasarea acestuia din lista de contacte ce 
+                                utilizeaza structura din ajax "fetch-then" unde trimite catre consola o promisiune unde este acesat in viitor
+                                pentru a vizualiza contactul.
+                            </span>
+                    </li>
+                    <li>
+                            <span>
+                                Sortarea in functie de anumite criterii  , in ordine alfabetica , cronologica  , dar si sortarea un pic 
+                                mai avansata pentru o cautare cat mai precisa de exemplu cei care se afla in acelasi grup ai user-ului si au 
+                                pasiuni comune.
+                            </span>
+                        </li>
+                        <li>
+                                <span>
+                                    Salvarea contactelor sau informatiile despre contact sub un anumit format , in aceste proiect doar trei metode
+                                    de export , CSV , vCard si Atom(XML).
+                                </span>
+                        </li>
+            </section>
+
+            <section id="Bibliografie">
+                <h2>Bibliografie</h2>
+                <a href="https://www.geeksforgeeks.org/">geeksforgeeks.org</a>
+                <br>
+                <a href="https://stackoverflow.com/">stackoverflow.com</a>
+            </section>
+
+            <br>
+    </body>
+</html>
