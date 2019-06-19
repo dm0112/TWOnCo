@@ -211,7 +211,8 @@ public function viewContacts($iduser,$cond){
 
 		//echo $row["Nume"]."  ".$row["Prenume"]."</br>";
 		if($row["Nume"] && $row["Prenume"])
-		echo "<li onclick='onClick(".$row["id"].")' id='".$row["id"]."'>".$row["Nume"]." ".$row["Prenume"]."</li>";
+		echo "<li onclick='onClick(".$row["id"].")' id='".$row["id"]."'>".$row["Nume"]." ".$row["Prenume"]." 
+	<img src=img/".$row["Pic"]." width='50' heigt='50' > </li>";
 
 		    
 }
