@@ -463,6 +463,7 @@ $iduser=$db->getIdFromToken($_COOKIE["token"]);
                  document.getElementById("addUserGroupe").value = jsonResp.UserGroup;
                  document.getElementById("addPice").value = jsonResp.Pic;
                  document.getElementById("idContact").value = jsonResp.id;
+                 
 
               })
               .catch(onError)
