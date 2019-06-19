@@ -39,8 +39,7 @@
        <section id="Structura">
            <h2> Structura Proiectului</h2>
            <span>
-               Proiectul are la baza doua pagini HTML , una pentru Autentificare iar cealalta fiind Pagina Pricipala unde utilizatorul isi vede contactele , isi
-               introduce noi contacte , isi editeaza informatiile legate de cont.
+               Proiectul are la baza doua pagini HTML, una pentru Autentificare iar cealalta fiind Pagina Pricipala unde utilizatorul poate sa isi gestioneze contactele si contul personal.
            </span>
        </section>
 
@@ -49,20 +48,20 @@
             <span>
                 Odata ce este accesat site-ul , utilizatorul este intampinat de un formular
                 de logare(in cazul in care are cont) , dar daca nu are cont se poate inregistra
-                accesand link-ul corespunzator. Trazitia dintre cele doua form-uri de logare , respectiv
+                accesand link-ul corespunzator. Tranzitia dintre cele doua form-uri de logare , respectiv
                 de inregistrare se face cu ajutorul unei functii javascript ce atribuie proprietatii
-                "display" a form-ului de logare valoare NULL iar valoare TRUE celui de inregistrare.
+                "display" a form-ului de logare valoare NONE iar valoare BLOCK celui de inregistrare.
                 Aceasta pagina de autentificare este stilizata cu ajutorul unui fisier "CSS".
             </span>
             <br>
             <span>
                 In formularul de inregistrare utilizatorul va fi atentionat daca nu completeaza toate campurile necesare,
                 altfel atunci cand da submit , cu ajutorul fiserului "db.php" , pagina web se conecteaza la o baza
-                facand o interogare , aceea de a insera in tabela "user" un nou utilizator. Parola introduse de catre
-                utilizator va fi cripatata cu ajutorul ustensilei "md5" si memorata. Se creea un token pentru ca utilizatorul
-                sa fie nevoit sa se autentifice de fiecare data cand acceseaza site-ul , acest token fiind valabil 30 de zile. 
-                La deconectare token-ul si cookie-ul vor fi sterse , acestea creeandu-se din nou in momentul conectarii , lafel
-                si in cazul modificarii parolei sau email-ului de conectare.
+                facand o interogare (verifica daca email-ul nu este deja in uz), iar dupa aceea o inserare . Parola introdusa de catre
+                utilizator va fi cripatata cu ajutorul ustensilei "md5" si memorata. Se creeaza un cookie pentru ca utilizatorul
+                sa nu fie nevoit sa se autentifice de fiecare data cand acceseaza site-ul , acest cookie fiind valabil 30 de zile. 
+                La deconectare cookie-ul va fi sters impreuna cu token-ul din baza de date, acestea creeandu-se din nou in momentul 
+				conectarii sau in cazul modificarii parolei sau email-ului de conectare.
             </span>
         </section>
 
@@ -72,6 +71,7 @@
                     Utilizatorul este intampinat cu o interfata atractiva ,responsive  creata prin utilizarea ustensilelor CSS, acesta putand
                     utiliza urmatoarele functionalitati:
                 </span>
+                <ul style="text-decoration: none;">
                     <li>
                         <span>
                             Deconectarea
@@ -79,36 +79,58 @@
                     </li>
                     <li>
                         <span>
-                            Editarea informatiilor legate de utilizator
+                            Editarea informatiilor legate de utilizator.
                         </span>
                     </li>
                     <li>
                             <span>
-                                Vizualizarea Informatiilor legate de contact respectiv stergerea si modificarea lor prin apasarea acestuia din lista de contacte ce 
-                                utilizeaza structura din ajax "fetch-then" unde trimite catre consola o promisiune unde este acesat in viitor
-                                pentru a vizualiza contactul.
+                                Vizualizarea informatiilor legate de contacte, respectiv stergerea si modificarea lor.
+                                
                             </span>
                     </li>
                     <li>
                             <span>
-                                Sortarea in functie de anumite criterii  , in ordine alfabetica , cronologica  , dar si sortarea un pic 
-                                mai avansata pentru o cautare cat mai precisa de exemplu cei care se afla in acelasi grup ai user-ului si au 
-                                pasiuni comune.
+                                Sortarea in functie de anumite criterii, ascendent/ descendent in functie de varsta, nume, prenume.
                             </span>
                         </li>
                         <li>
                                 <span>
-                                    Salvarea contactelor sau informatiile despre contact sub un anumit format , in aceste proiect doar trei metode
-                                    de export , CSV , vCard si Atom(XML).
+                                    Salvarea contactelor sau informatiile despre contact sub un anumit format: CSV , vCard si Atom(XML).
                                 </span>
                         </li>
+						<li>
+						<span>
+              Cautare rapida dupa nume/ prenume.
+						</span>
+						</li>
+
+            <li>
+              <span>Crearea de grupuri pentru contacte.</span></li>
+            <li>
+              <span>Filtrarea rezultatelor dupa criterii, precum: nume, prenume, varsta, locatie, adresa, adresa web, grup, email, numar de telefon.
+
+              </span>
+            </li>
+          </ul>
             </section>
 
+
+            <section id="Organizarea_codului">
+              
+              <h2>Organizarea Codului Sursa</h2>
+              <span>
+
+              </span>
+
+
+            </section>
             <section id="Bibliografie">
                 <h2>Bibliografie</h2>
                 <a href="https://www.geeksforgeeks.org/">geeksforgeeks.org</a>
                 <br>
                 <a href="https://stackoverflow.com/">stackoverflow.com</a>
+				<br>
+                <a href="https://www.w3schools.com">w3schools.com</a>
             </section>
 
             <br>
